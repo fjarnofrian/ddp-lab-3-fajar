@@ -1,0 +1,57 @@
+# DDP LAB-3
+
+# SOAL 1 - Gunting-Batu-Kertas
+# Tuliskan program untuk Soal 1 di bawah ini
+A = input("masukan pilihan player: ")
+B = input("masukan pilihan player: ")
+
+# if variabel kemungkinan yang terjadi 
+
+if A == ("gunting") and B == ("batu"):
+  print("player -2 menang.")
+
+elif A ==("gunting") and B == ("kertas"):
+  print("player-1 menang.") 
+
+elif A ==("batu") and B == ("kertas"):
+  print("player-2 menang.") 
+
+elif A ==("batu") and B == ("gunting"):
+  print("player-1 menang.") 
+
+elif A ==("kertas") and B == ("gunting"):
+  print("player-2 menang.") 
+
+elif A ==("kertas") and B == ("batu"):
+  print("player-1 menang.") 
+
+else:
+  print("pertandingan seri.")
+
+
+# SOAL 2 - Toko Buku Bekas
+# Tuliskan program untuk Soal 2 di bawah ini
+
+
+A = int(input("masukan banyaknya buku yang akan dibeli: "))
+if A <= 10:
+    total = A * 20000
+elif A  >=11 and A <=25:    
+    total = A * 18000
+elif A >=25 and A <=50:
+    total = A * 15000
+else:
+    total = A * 10000
+
+
+print("harga yang harus dibayarkan = Rp, ", total, "Rupiah")    
+
+# SOAL 3 - Mencetak Persegi
+# Tuliskan program untuk Soal 3 di bawah ini
+a = int(input("masukan jumlah bilangan integer : "))
+for i in range(a):
+  if (i % 2 == 0):
+        print("#" * a, end=" ")
+  else:
+      print("$" * a, end=" ")    
+  print()
